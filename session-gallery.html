@@ -6,6 +6,13 @@
 <title>세션 기록</title>
 <style>
 
+/* LOPE LOG WINDOW: compact modal, retains visible gallery behind it */
+.embedded-reader:not([hidden]){position:fixed!important;inset:0!important;z-index:99999!important;display:flex!important;align-items:center!important;justify-content:center!important;flex-direction:column!important;padding:clamp(12px,4vw,40px)!important;background:rgba(19,17,23,.38)!important;box-sizing:border-box!important;overflow:hidden!important}
+.embedded-reader-head{box-sizing:border-box!important;width:min(760px,86vw)!important;max-width:100%!important;flex:none!important;border-radius:14px 14px 0 0!important;background:var(--paper,#fff)!important;border:1px solid var(--soft-line,#ddd)!important;padding:12px 15px!important;box-shadow:0 14px 45px #0003!important}
+.embedded-reader-frame{box-sizing:border-box!important;display:block!important;flex:none!important;width:min(760px,86vw)!important;max-width:100%!important;height:min(66vh,650px)!important;min-height:150px!important;border:1px solid var(--soft-line,#ddd)!important;border-top:0!important;border-radius:0 0 14px 14px!important;background:#fff!important;box-shadow:0 14px 45px #0003!important}
+@media(max-width:600px){.embedded-reader:not([hidden]){padding:9px!important}.embedded-reader-head,.embedded-reader-frame{width:96vw!important}.embedded-reader-frame{height:69vh!important}}
+
+
 :root {
   --accent:var(--lope-accent,#a675b8);
   --ink:var(--lope-text,#282429);
